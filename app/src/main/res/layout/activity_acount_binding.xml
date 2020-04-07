@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_28"
+                android:layout_marginStart="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="邮件"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/sp_16" />
+
+                <EditText
+                    android:id="@+id/account_edit"
+                    android:theme="@style/MyEditText"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/light_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="请输入您的邮箱"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_28"
+                android:layout_marginStart="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="密码"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/sp_16" />
+
+                <EditText
+                    android:id="@+id/account_pwd"
+                    android:theme="@style/MyEditText"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/light_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_28"
+                android:layout_marginStart="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="确认密码"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/sp_16" />
+
+                <EditText
+                    android:id="@+id/account_pwd_again"
+                    android:theme="@style/MyEditText"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/light_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="请再次输入您的密码"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_28"
+                android:layout_marginStart="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_18"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/box1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/check_box1_selector"
+                    android:button="@null" />
+
+                <TextView
+                    android:id="@+id/tv_zctk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:text="登录表示您确认自身满20周岁并同意《使用条款》"
+                    android:textColor="@color/main_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/commit"
+                style="@style/style_circle_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_commit_conner"
+                android:singleLine="true"
+                android:text="确 定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="没有电子邮件？改由 "
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/to_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机绑定"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/red_main"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

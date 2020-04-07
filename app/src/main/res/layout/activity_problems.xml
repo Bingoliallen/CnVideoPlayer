@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <EditText
+        android:id="@+id/edProblem"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_ed"
+        android:gravity="top"
+        android:hint="请输入要反馈的问题与建议"
+        android:padding="10dp"
+        android:maxLength="500"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/light_gray"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_ed"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:hint="请输入您的手机号"
+        android:padding="10dp"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/light_gray"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/commit"
+        style="@style/style_circle_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/bg_commit_conner"
+        android:text="提 交"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

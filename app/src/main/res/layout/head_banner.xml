@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/head_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:paddingBottom="@dimen/dp_0"
+        android:paddingLeft="@dimen/dp_0"
+        android:paddingRight="@dimen/dp_0"
+        android:paddingTop="@dimen/dp_0" />
+
+    <LinearLayout
+        android:id="@+id/simpleMarqueeView1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f0f0f0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/speaker" />
+
+        <com.gongwen.marqueen.SimpleMarqueeView
+            android:id="@+id/simpleMarqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:smvTextColor="#a6a6a6"
+            app:smvTextEllipsize="end"
+            app:smvTextGravity="center_vertical"
+            app:smvTextSingleLine="true"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:flipInterval="10000"
+            android:inAnimation="@anim/in_right"
+            android:outAnimation="@anim/out_left"
+            app:marqueeAnimDuration="5000"
+            app:smvTextSize="15sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bannerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:text="最新影片"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+</LinearLayout>

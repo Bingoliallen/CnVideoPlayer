@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@mipmap/login_logo" />
+
+        <TextView
+            android:id="@+id/login_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="美丽又私密地视频"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/login_tv"
+        android:layout_marginEnd="@dimen/dp_28"
+        android:layout_marginStart="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/bg_login_conner"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/login_phone" />
+
+        <EditText
+            android:id="@+id/login_account_edit"
+            style="@style/style_circle_edit"
+            android:layout_marginStart="@dimen/dp_10"
+            android:hint="@string/login_account_tint"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingEnd="0dp"
+            android:paddingStart="0dp"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="@dimen/dp_28"
+        android:layout_marginStart="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_13"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_login_conner"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/login_code" />
+
+            <EditText
+                android:id="@+id/login_password_edit"
+                style="@style/style_circle_edit"
+                android:layout_marginStart="@dimen/dp_10"
+                android:hint="@string/login_password_tint"
+                android:inputType="phone"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_code"
+            style="@style/style_circle_btn"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_login_conner_1"
+            android:singleLine="true"
+            android:text="@string/login_code"
+            android:textColor="@color/login_code"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="@dimen/dp_28"
+        android:layout_marginStart="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_13"
+        android:background="@drawable/bg_login_conner"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/login_id" />
+
+        <EditText
+            android:id="@+id/login_account_tj"
+            style="@style/style_circle_edit"
+            android:layout_marginStart="@dimen/dp_10"
+            android:hint="@string/login_tjr"
+            android:paddingEnd="0dp"
+            android:paddingStart="0dp"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_48"
+        android:layout_marginStart="@dimen/dp_48"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/box1"
+            android:layout_gravity="center"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:button="@null"
+            android:background="@drawable/check_box_selector" />
+
+        <TextView
+            android:id="@+id/tv_zctk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="5dp"
+            android:text="登录表示您确认自身满20周岁并同意《使用条款》"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/style_circle_btn"
+        android:layout_marginEnd="@dimen/dp_28"
+        android:layout_marginStart="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@drawable/bg_login_conner_1"
+        android:text="@string/login_in"
+        android:textColor="@color/login_code" />
+</LinearLayout>

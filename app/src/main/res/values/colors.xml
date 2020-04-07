@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ED3C64</color>
+    <color name="colorPrimaryDark">#ED3C64</color>
+    <color name="colorAccent">#ED3C64</color>
+    <color name="bar_grey">#ED3C64</color>
+    <color name="text_color">#333333</color>
+    <color name="text_color1">#999999</color>
+    <color name="white">#ffffff</color>
+    <color name="color_white">#ffffff</color>
+    <color name="main_color">#ED3C64</color>
+    <color name="main_color_p">#3fED3C64</color>
+    <color name="btn_color">#E5E5E5</color>
+    <color name="line">#eeeeee</color>
+    <color name="line1">#80ffffff</color>
+    <color name="text_gray">#A8A8A8</color>
+    <color name="light_gray">#808080</color>
+
+    <color name="gray">#FFF0F0F0</color>
+    <color name="grey">#cccccc</color>
+    <color name="grey_divider">#E5E5E5</color>
+    <color name="comment_text">#5b5d5c</color>
+    <color name="colorBackground">#EEEEEE</color>
+    <color name="colorCard">#FFFFFF</color>
+    <color name="colorPrimaryOverlay">#ED3C64</color>
+    <color name="light_deep_red">#f9382a</color>
+    <color name="light_green">#3fc75f</color>
+    <color name="light_red">#e26d2e</color>
+    <color name="card_color">#202124</color>
+    <color name="card_bac">#f7f3f3</color>
+
+    <color name="red_main">#ED3C64</color>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/head_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:paddingLeft="@dimen/dp_0"
+        android:paddingRight="@dimen/dp_0"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_0" />
+    <TextView
+        android:id="@+id/bannerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:paddingLeft="0dp"
+        android:background="@color/white"
+        android:textColor="@color/white"
+        android:text="最新影片"/>
+
+</LinearLayout>

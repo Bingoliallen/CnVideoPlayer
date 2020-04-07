@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="videoplayer.android.com.cnvideoplayer">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡读写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取Log -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/appname"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar"
+        tools:replace="android:icon,android:theme,android:allowBackup,android:label">
+        <activity
+            android:name=".ui.SplashActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SimplePlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Full" />
+        <activity
+            android:name=".ui.VideoDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Full" />
+        <activity
+            android:name=".ui.BrowseRecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProblemsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PolicyTermsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WebVideoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.VipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.JHMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SearchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MBRecordsActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5bd95f88b465f58e0300002e" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="official" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ansen.checkupdate.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+
+
+
+        <activity
+            android:name=".ui.AcountBindingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SchemeManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.InvitationCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AcountBindingPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.EmailLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PhoneLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ConfirmPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ViedoListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SortListActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
